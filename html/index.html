@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <header id="home"> 
+        <nav class="container1">
+          <div class="con">
+            <img src="FB_IMG_17068650465755773.jpg" alt="">
+            <h1>MeetME</h1>
+          </div>
+      
+          <!-- Hamburger icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <!-- Navigation links -->
+          <div class="con2" id="navLinks">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="dt">
+          <p id="current-time"></p>
+          <script>
+            let time = document.getElementById("current-time");
+            setInterval(() => {
+              let d = new Date();
+              time.innerHTML = d.toLocaleTimeString();
+            }, 1000);
+      
+            // Toggle mobile menu
+            function toggleMenu() {
+              document.getElementById("navLinks").classList.toggle("active");
+            }
+          </script>
+        </div>
+      
+        <nav class="container2">
+          <div class="greet">
+            <div id="greeting"></div>
+      
+            <div class="navbardmy">
+              <div><div id="day"></div></div>
+              <div><div id="month"></div></div>
+            </div>
+          </div>
+      
+          <div class="slider1">
+            <p>Hi, This is</p>
+            <h1>Akinboye Ademola</h1>
+            <p class="slot">Front-end Web Developer, Graphics Designer and Project Manager</p>
+      
+            <div class="info">
+              <a href="https://www.facebook.com/dammilola.akins/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.youtube.com/@hakinboyehademola9673"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.github.com/Hakinhade"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/akinboye-ademola-6298b493"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <button><a href="">Free quote available</a></button>
+          </div>
+        </nav>
+      </header>
+      
+<!-- <header id="home">
+<nav class="container1">
+    <div class="con">
+        <img src="FB_IMG_17068650465755773.jpg" alt="">
+        <h1>MeetME</h1>
+    </div>
+    
+    <div class="con2">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="dt">
+        <p id="current-time"></p>
+        <script>
+            let time = document.getElementById ("current-time");
+                setInterval(() =>{
+                    let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+                },1000)
+        </script>
+    </div>
+
+    <nav class="container2">
+        <div class="greet">
+            <div id="greeting"></div>
+    
+            <div class="navbardmy">
+                <div>
+                    <div id="day"></div>
+                </div>
+        
+                <div>
+                    <div id="month"></div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="slider1">
+            <p>Hi, This is</p>
+            <h1>Akinboye Ademola</h1>
+            <p class="slot">Front-end Web Developer, Graphics Designer and Project Manager</p>
+
+            <div class="info">
+                <a href="https://www.facebook.com/dammilola.akins/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@hakinboyehademola9673"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.github.com/Hakinhade"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akinboye-ademola-6298b493"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <button><a href="">Free quote available</a></button>
+        </div>
+    </nav>
+</header> -->
+
+
+<main>
+    <section id="about">
+    <div class="container3">
+    <img src="WhatsApp Image 2025-04-08 at 11.23.19_b0b389a8.jpg" alt="">
+
+    <div class="data">
+        <div class="data1">
+            <h1>Hi Guyz!</h1>
+            <p>I am an individual with ambition and drive for succcess. I am also performance driven and result oriented to provide top-quality services and add value to your work environment. I am an expert with more than 15 years of experience in brand and web development, promotional strategy, printing and graphic design. I specialize in Web development, managing corporate merchandise campaigns, building lasting client relationships through creative printing and branding. I’ve helped companies boost their outreach through web development, customized promotional products (printing & branding) and strategic event planning. Outside of work, I enjoy traveling and exploring local art events.</p>
+        </div>
+
+        <div class="data2">
+            <div class="dat">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Name</span><br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Experience</span><br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Country</span><br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">State</span><br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Email</span><br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Phones</span><br>
+            </div>
+
+            <div class="datt">
+                <p>Akinboye Ademola</p>
+                <p>20Years</p>
+                <p>Nigeria</p>
+                <p>Lagos</p>
+                <p>hakin2hade@gmail.com</p>
+                <p>234(01) 807 518 2523, 0903 849 9748</p>
+            </div>
+        </div>
+
+        <div class="but">
+            <button style="background-color: rgb(225, 64, 5);"><a href="My Curriculum Vitae....pdf" download="New Curriculum Vitae"><i class="fa fa-arrow-circle-right"></i>Download CV</a></button>
+        </div>
+    </div>
+
+</div>
+
+<section id="services">
+<div class="container4">
+    <h2>What I Do</h2>
+
+    <div class="content">
+        <div class="on">
+            <i class="fa fa-th-large"></i>
+            <a href=""><h3>front-end development</h3></a>
+            <p>Develop and professionally manage your web. Manage content and uploads with innitial support. Register and Maintaining domain name with email hosting.</p>
+        </div>
+    
+        <div class="do">
+            <i class="fab fa-lastfm"></i>
+            <a href=""><h3>graphic design</h3></a>
+            <p>Known for a strong sense of aesthetics, typography, and color theory, with a proven track record of delivering engaging designs that align with client goals and market trends.</p>        </div>
+
+        <div class="tra">
+            <i class="fa fa-briefcase"></i>
+            <a href=""><h3>business branding</h3></a>
+            <p>A Strategic and innovative Graphic Designer with a specialization in business branding and visual identity development.</p>
+        </div>
+    
+        <div class="kat">
+            <i class="fa fa-comments -o"></i>
+            <a href=""><h3>project management</h3></a>
+            <p>Skilled in overseeing all phases of the project lifecycle—from initiation and planning to execution, monitoring, and closure—while ensuring alignment with business goals and stakeholder expectations.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<div class="container5">
+    <div class="content1">
+        
+        <div class="bounce"><i class="fa fa-graduation-cap"></i></div>
+        <h2>education</h2>
+
+        <div class="on">
+            <h5>B.A In History and Diplomatic Studies <br> O.O.U, Ago-Iwoye.</h5>
+            <h4>(2003 - 2007)</h4>
+
+            <p>Throughout my studies, I learned to view issues from multiple perspectives, to question assumptions,  communicate complex ideas clearly and persuasively.</p>
+        
+        </div>
+
+        <div class="do">
+            <h5>Ansar-ud-deen comprehensive high school <br> okota-isolo.</h5>
+            <h4>(1990 - 1996)</h4>
+
+            <p>Looking back this period, was a space of creativity, self-expression, and personal growth. Explore ideas freely, challenge my imagination, and develop a visual language of my own.</p>
+        
+        </div>
+
+        <div class="tra">
+            <h5>yaba model primary school <br> yaba-lagos.</h5>
+            <h4>(1986 - 1990)</h4>
+
+            <p>This laid the foundation for who I am today both academically and personally. They were years of discovery, filled with curiosity, growth, and the simple joy of learning. </p>
+        
+        </div>
+
+    </div>
+
+
+    <div class="content2">
+        
+            <i class="fa fa-briefcase"></i>
+            <h2>experience</h2>
+    
+            <div class="on">
+                <h5>Details Exclusives Ltd. <br> Client Executive Officer</h5>
+                <h4>(2022 - Present)</h4>
+                <p>A professionally intersector of client engagement, strategic communication, and service delivery. Balances empathy with efficiency, and relationship-building with results.</p>
+            </div>
+    
+            <div class="do">
+                <h5>Austesal Nigeria Ltd. <br> debt recovery/computer analyst</h5>
+                <h4>(2010 - 2013)</h4>
+                <p>Responsible for tracking down overdue payments with persuasive communication, balancing firmness with empathy in awareness of legal boundaries. Ensuring system changes align with organizational goal.</p>
+            </div>
+    
+            <div class="tra">
+                <h5>Wale Adenuga Film Production (PEFTI) <br> Junior Director/Tech Engineer</h5>
+                <h4>(2005 - 2006)</h4>
+                <p>I'm a drama illusionist with natural act, perfect script-writer and interpreter. Also annex a professional editing and graphical skills.</p>
+            </div>
+    </div>
+
+</div>
+
+
+<section id="work">
+<div class="container6">
+    <div class="remark">
+        <h1>My Remarkable Works</h1>
+    </div>
+
+
+    <div class="slider2">
+        <div class="slide-track">
+
+            <div class="slide">
+                <img src="samsung-memory-Yf5YaNr3Ujg-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="note pad images.jpeg" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="MTN Black Shirt.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Casino Party Centerpieces, Casino Favor Box, Casino Theme, Ace of Spades, Casino Party Favors, Ace of Spade, Vegas Theme Party, Vegas Theme - Etsy.jpg" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="sargent-seal-FuV0TOMzySc-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Convocation jotter cover design.jpg" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="Screenshot 2025-01-04 224545.png" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="ben-kolde-bs2Ba7t69mM-unsplash.jpg" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="webpage.png" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="Webpage front.png" alt="" height="200px">
+            </div>
+            <div class="slide">
+                <img src="Screenshot 2025-01-04 224024 copy.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="adeniji-abdullahi-a-rH5kewe_3IE-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Achievements-->
+<section class="achieve">
+    <img src="camera imgae.png" alt="">
+
+    <div class="all">
+        <div class="images">
+            <img src="wok_in_p-removebg-preview.png" alt="">
+            <ul>
+                <li>134</li>
+                <li>project working</li>
+            </ul>
+        </div>
+
+        <div class="imagee">
+            <img src="todo_list-removebg-preview.png" alt="">
+            <ul>
+                <li>250</li>
+                <li>project done</li>
+            </ul>
+        </div>
+
+        <div class="imaged">
+            <img src="award-trophy.png" alt="">
+            <ul>
+                <li>19</li>
+                <li>awards</li>
+            </ul>
+        </div>
+
+        <div class="imagss">
+            <img src="todo_list-removebg-preview.png" alt="">
+            <ul>
+                <li>161</li>
+                <li>happy clients</li>
+            </ul>
+        </div>
+    </div>
+</section>
+   
+
+
+
+
+
+<section class="contact" id="contact"> 
+    <h1 class="heading"> to contact <span>me</span></h1>
+    <h2 class="yu"> Via email. Click on the fields below
+        to fill your details and await swift response.</h2>
+    
+    <form id="myForm" onsubmit="return validationForm()">
+        <div class="inputBox">
+            <div>
+                <input type="text" id="fname" placeholder="Full Name"/>
+                <span class="error" id="fnameError"></span>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Email"/>
+                <span class="error" id="emailError"></span>
+            </div>
+        </div>
+        <div class="inputBox">
+            <div>
+                <input type="number" id="phone" placeholder="Phone Number"/>
+                <span class="error" id="phoneError"></span>
+            </div>
+            <div>
+                <input type="text" id="subject" placeholder="Subject"/>
+                <span class="error" id="subjectError"></span>
+            </div>
+        </div>
+        <div>
+            <textarea id="message" cols="20" rows="5" placeholder="Message"></textarea>
+            <span class="error" id="messageError"></span>
+        </div>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+
+
+<!-- <section class="contact" id="contact">
+    <h1 class="heading"> to contact <span>me</span></h1>
+    <h2 class="yu"> Via email. Click on the fields below
+        to fill your details and await swift response.</h2>
+    
+        <form id="myForm" onsubmit="return validationForm()">
+        
+        <div class="inputBox">
+            <input type="text" id="fname" placeholder="Full Name"/>
+            <input type="email" id="email" placeholder="Email"/>
+        </div>
+        <div class="inputBox">
+            <input type="number" id="phone" placeholder="Phone Number">
+            <input type="text" id="subject" placeholder="subject"/>
+        </div>
+        <textarea name="" id="" cols="20" rows="5" placeholder="message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+
+
+    </form>
+ </section> -->
+
+
+ <div>
+    <div class="loading"></div>
+</div>
+</main>
+
+
+
+
+<footer>
+    <h3>© Copyright 2025 Hakin-Hade (+234-807-5182-523) All Rights Reserved. </h3>
+</footer>
+
+<script src="style.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
